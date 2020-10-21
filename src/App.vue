@@ -8,6 +8,7 @@
 				:key="player.id"
 				:name="player.name"
 				@delete-player="deletePlayer"
+				@edit-player="editPlayer"
 			/>
 		</div>
 	</div>
@@ -46,6 +47,15 @@ export default {
 			this.players = this.players.filter((player) => {
 				return player.name !== e;
 			});
+		},
+		editPlayer(temp) {
+			for (let i = 0; i < this.players.length; i++) {
+				if (this.players[i].name == temp.oldName) {
+					this.players[i].name = temp.newName;
+					break;
+				}
+			}
+			console.log(this.players);
 		},
 		addPlayer(name) {
 			this.players.push({
@@ -96,9 +106,24 @@ button {
 	background-color: #7f51fd2c;
 }
 
+input {
+	border: none;
+	border-radius: 0.2em;
+	width: 25em;
+	height: 2em;
+	margin-left: 1.5em;
+}
+
 @media only screen and (max-width: 1000px) {
 	.container {
 		width: 100%;
+	}
+	input {
+		border: none;
+		border-radius: 0.2em;
+		margin-left: 1.5em;
+		width: 10em;
+		height: 2em;
 	}
 }
 </style>

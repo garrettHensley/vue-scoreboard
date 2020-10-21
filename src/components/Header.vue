@@ -74,21 +74,14 @@ h1 {
 	margin-right: 2em;
 }
 #new-player {
-	margin-left: 2em;
 	padding-bottom: 1em;
+	margin-left: 2em;
 }
 button {
 	border-radius: 1.5em;
 	height: 2em;
 	width: 2em;
 	border: none;
-}
-input {
-	border: none;
-	border-radius: 0.2em;
-	margin-left: 1.5em;
-	width: 25em;
-	height: 2em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -105,13 +98,6 @@ input {
 	.player-count {
 		font-size: 1.2em;
 		margin-right: 1em;
-	}
-	input {
-		border: none;
-		border-radius: 0.2em;
-		margin-left: 1.5em;
-		width: 10em;
-		height: 2em;
 	}
 }
 </style>
