@@ -28,7 +28,7 @@
 			</h2>
 		</div>
 		<!-- Counter Component :) -->
-		<Counter id="counter" v-if="!editing" />
+		<Counter id="counter" v-show="!editing" />
 	</div>
 </template>
 
@@ -44,16 +44,13 @@ export default {
 			editing: undefined,
 			newName: "",
 			trueName: undefined,
+			score: 0,
 		};
 	},
 	props: {
 		name: {
 			type: String,
 			default: "Player",
-		},
-		score: {
-			type: Number,
-			default: 0,
 		},
 	},
 	mounted() {

@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div id="app" class="container">
 		<Header :playerCount="players.length" @add-player="addPlayer" />
 		<div>
 			<!-- Players go here -->
@@ -28,15 +28,19 @@ export default {
 			players: [
 				{
 					name: "Gare",
+					score: 0,
 				},
 				{
 					name: "Michael",
+					score: 0,
 				},
 				{
 					name: "Stephanie",
+					score: 0,
 				},
 				{
 					name: "Chris",
+					score: 0,
 				},
 			],
 		};

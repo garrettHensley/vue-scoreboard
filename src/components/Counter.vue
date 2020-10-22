@@ -1,7 +1,7 @@
 <template>
 	<div id="counter">
 		<button @click="decrementScore">-</button>
-		{{ score }}
+		<div>{{ score }}</div>
 		<button @click="incrementScore">+</button>
 	</div>
 </template>
