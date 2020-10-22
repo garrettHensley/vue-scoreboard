@@ -1,5 +1,7 @@
 # vue-scoreboard
 An app for keeping player scores. You can add, edit and delete players from the scoreboard!
+![Scoreboard Preview]
+(https://i.imgur.com/plIDrvK.png)
 
 ## Project setup
 ```
