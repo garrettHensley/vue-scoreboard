@@ -1,6 +1,6 @@
 # vue-scoreboard
 An app for keeping player scores. You can add, edit and delete players from the scoreboard!
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Scoreboard Preview](https://i.imgur.com/plIDrvK.png)
 
 ## Project setup
 ```
