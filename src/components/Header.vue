@@ -13,7 +13,7 @@
 		<span class="player-count">Players: {{ playerCount }}</span>
 	</div>
 	<div id="new-player" v-if="addingNewPlayer">
-		<button>+</button>
+		<button @click="addPlayer">+</button>
 		<input
 			type="text"
 			placeholder="Player Name"

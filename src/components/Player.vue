@@ -3,24 +3,27 @@
 		<div class="player-name">
 			<span class="delete-player">
 				<button @click="deletePlayer(name)">x</button>
-				<template v-if="editing" style="margin-left: 1.5em;"
-					><input
-						type="text"
-						v-model="newName"
-						:placeholder="name"
-						maxlength="10"
-					/>
-					<button
-						id="confirm-edit"
-						@click="
-							editName();
-							editing = !editing;
-						"
-						:disabled="newName.length <= 0"
-					>
-						✓
-					</button></template
-				>
+				<template v-if="editing" style="margin-left: 1.5em;">
+					<form>
+						<input
+							type="text"
+							v-model="newName"
+							name="New Player Name"
+							:placeholder="name"
+							maxlength="10"
+						/>
+						<button
+							id="confirm-edit"
+							@click="
+								editName();
+								editing = !editing;
+							"
+							:disabled="newName.length <= 0"
+						>
+							✓
+						</button>
+					</form>
+				</template>
 			</span>
 
 			<h2>
